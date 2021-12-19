@@ -1,0 +1,36 @@
+.Loginheader{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #3f5d9a;
+    height: 83px;
+    overflow: hidden;
+}
+.header-logo-login{
+    height: 78px;
+    object-fit: contain;
+    margin-top: 8px;
+    margin-left: 60px;
+}
+.register-btn-login{
+    width: 180px;
+    height: 30px;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: #42b72a;
+    border: none;
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 770px;
+    margin-top: 10px;
+}
+.register-btn-login:hover{
+    background-color: #32971e;
+    transition: 0.2s;
+    cursor: pointer;
+}

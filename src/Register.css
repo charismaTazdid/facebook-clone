@@ -1,0 +1,89 @@
+.register{
+    background-color: #c9cbee;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+
+}
+.register-container{
+    width: 612px;
+    height: 372px;
+    display: flex;
+    padding: 20px;
+    background-color: #e9ebee;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.register-container > h1{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.register-container > h3{
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: black;
+    margin-left: 107px;
+}
+.register-container > form > center > input{
+    height: 33px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    background-color: white;
+    width: 396px;
+    border: 0.5px solid gray;
+    padding-left: 20px;
+}
+.register-container > form > center > input::-webkit-input-placeholder{
+    font-size: 22px;
+    color: rgb(170, 170,170);
+    padding-top: 40px;
+}
+
+.register-btn{
+    background-color: #5e994b;
+    border: none;
+    width: 195px;
+    height: 38px;
+    border-radius: 1px solid rgb(59, 110, 34);
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+.register-name{
+    height: 36px !important;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 193px !important;
+    border: 0.5px solid gray;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.register-gender{
+    display: flex;
+    color: rgb(144, 148, 156);
+    font-size: 18px;
+    margin-left: 0px;
+}
+.register-date{
+    height: 28px;
+    width: 70px;
+    margin-left: 110px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.create-btn{
+    color: white;
+    font-weight: 700;
+   cursor: pointer;
+   padding: 20px 30px ;
+   background-color: #5e994b;
+   border: none;
+   border-radius: 5px;
+   margin-top: 40px;
+}
