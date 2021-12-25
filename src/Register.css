@@ -22,6 +22,7 @@
     font-size: 30px;
     margin-bottom: 10px;
     text-align: center;
+    opacity: 0.8;
 }
 .register-container > h3{
     font-weight: 300;
@@ -29,6 +30,7 @@
     margin-bottom: 20px;
     color: black;
     margin-left: 107px;
+    opacity: 0.8;
 }
 .register-container > form > center > input{
     height: 33px;
@@ -59,24 +61,23 @@
     height: 36px !important;
     margin-bottom: 10px;
     background-color: white;
-    width: 193px !important;
+    width: 183px !important;
     border: 0.5px solid gray;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     border-radius: 5px;
 }
-.register-gender{
+
+.register-radiocontainer{
     display: flex;
-    color: rgb(144, 148, 156);
-    font-size: 18px;
-    margin-left: 0px;
+    justify-content: center;
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
-.register-date{
-    height: 28px;
-    width: 70px;
-    margin-left: 110px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.register-radiocontainer > h5{
+    color: gray;
+    margin-right: 30px;
 }
+
 .create-btn{
     color: white;
     font-weight: 700;

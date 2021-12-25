@@ -21,32 +21,37 @@ const Register = () => {
                     <center>
                         <input type="password" placeholder="password" />
                     </center>
-                    <h5 className="rgister-date">Date of Birth</h5>
-                
-                    <input type="date" />
-                   <h5 className="register-gender"> Gender </h5>
-                <div className="register-radiocontainer">
-                    <input type="radio" name="gender" value="male" id="male" />
-                    <label htmlFor="male"> Male </label>
-                    <input type="radio" name="gender" value="female"  id="female"/>
-                    <label htmlFor="female"> Female </label>
-                    <input type="radio" name="gender" value="other" id="other"/>
-                    <label htmlFor="other"> Other </label>
-                </div>
+                    <center>
+                        <h5 className="rgister-date">Date of Birth</h5>
 
-                <p className="register-policy">
-                    By clicking Sign Up you agree to our {" "}
-                    <span> Terms, Data Policy </span> and <span>cookie Policy </span>
-                    . You may recive SMS notifications from us and can opt out at any time.
+                        <input type="date" />
+                      
+                    </center>
+                    <div className='register-radiocontainer'>
+                    <h5 className="register-gender"> Gender </h5>
+                        <div className="">
+                            <input type="radio" name="gender" value="male" id="male" />
+                            <label htmlFor="male"> Male </label>
+                            <input type="radio" name="gender" value="female" id="female" />
+                            <label htmlFor="female"> Female </label>
+                            <input type="radio" name="gender" value="other" id="other" />
+                            <label htmlFor="other"> Other </label>
+                        </div>
+                    </div>
 
-                </p>
-                
-                <center>
-                    <Link to="/login"> 
-                      <button type="submit" className="create-btn"> Create Account</button>
-                    </Link>
-                </center>
-                
+                    <p className="register-policy">
+                        By clicking Sign Up you agree to our {" "}
+                        <span> Terms, Data Policy </span> and <span>cookie Policy </span>
+                        . You may recive SMS notifications from us and can opt out at any time.
+
+                    </p>
+
+                    <center>
+                        <Link to="/login">
+                            <button type="submit" className="create-btn"> Create Account</button>
+                        </Link>
+                    </center>
+
                 </form>
             </div>
         </div>

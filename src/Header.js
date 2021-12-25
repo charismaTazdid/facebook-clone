@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
@@ -7,8 +7,10 @@ import { ExpandMore, NotificationsActive, StorefrontOutlined, SubscriptionsOutli
 import { Avatar, IconButton } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import ForumIcon from '@mui/icons-material/Forum';
+import { UserContext } from './App';
 
 const Header = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     return (
         <div className="header-home">
 
@@ -38,8 +40,8 @@ const Header = () => {
             </div>
             <div className="header-right">
                 <div className="header-info">
-                    <Avatar></Avatar>
-                    <h4>Raihan Tajdid</h4>
+                <Avatar src={loggedInUser.image}></Avatar>
+                    <h4> {loggedInUser.name} </h4>
                 </div>
 
                 <IconButton>

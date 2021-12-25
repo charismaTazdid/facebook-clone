@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FbLogin from './FbLogin';
 import Login from './Login';
 import './LoginHeader.css'
 
@@ -15,7 +16,8 @@ const LoginHeader = () => {
             <button className="register-btn-login">Create New Account</button>
             </Link>
         </div>
-        <Login/>
+        {/* <Login/>   I will refactor this later */}
+        <FbLogin/>
         </>
     );
 };

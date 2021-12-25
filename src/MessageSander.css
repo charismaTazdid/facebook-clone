@@ -27,10 +27,11 @@
 
 }
 .messageSanderTop > form > button{
-    display: none;
+    /* display: none; */
 }
 .messageSander-input{
     flex: 1;
+ 
 }
 
 .messageSanderBottom{
@@ -53,4 +54,12 @@
 .messageSander-option:hover{
     background-color: #eff2f5;
     border-radius: 20px;
+}
+
+.postButton{
+    font-weight: 800;
+}
+
+.focus-field{
+    transform: scale(1.2);
 }

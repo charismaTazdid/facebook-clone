@@ -8,31 +8,28 @@ import {
 import Home from './Home';
 import LoginHeader from './LoginHeader';
 import RegisterHeader from './RegisterHeader';
+import { createContext, useState } from 'react';
 
 
+export const UserContext = createContext()
 function App() {
-
-  //npm install firebase
-  // npm install -g firebase-tools
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <div className="App">
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
-        <Routes>
-          <Route exact path="/" element={<LoginHeader />} >
-            {/* <Login/> */}
-          </Route>
-          <Route path="/home" element={<Home />} />
+        {
+          loggedInUser.email ? (<Home />) :
 
-          <Route path="/login" element={<LoginHeader />}>
-            {/* <Login/> */}
-          </Route>
-          <Route path="/register" element={<RegisterHeader />}>
-            {/* <Register/> */}
-          </Route>
-        </Routes>
+            (<Routes>
+              <Route exact path="/" element={<LoginHeader />} />
+              {/* <Route path="/home" element={<Home />} /> */}
+              <Route path="/login" element={<LoginHeader />} />
+              <Route path="/register" element={<RegisterHeader />} />
+            </Routes>)
+        }
+
       </Router>
-
-    </div>
+    </UserContext.Provider>
   );
 }
 

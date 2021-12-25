@@ -1,0 +1,27 @@
+.fb-login{
+    background-color: #e9ebee;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.fb-login div > img{
+    object-fit: contain;
+    height: 150px;
+    
+}
+
+.fb-login div{
+    display: flex;
+    flex-direction: column;
+}
+
+.fb-login > button {
+    width: 300px;
+    background-color: #2e81f4;
+    color: #eff2f5;
+    font-weight: 800;
+}
+.fb-login > button:hover{
+    
+    color: #2e81f4;
+}

@@ -21,6 +21,7 @@
 .post-top-info > p{
     font-size: small;
     color: gray;
+    opacity: 0.7;
 }
 
 .post-bottom{
@@ -28,19 +29,25 @@
     margin-bottom: 10px;
     padding: 15px 25px;
 }
+.post-bottom> p{
+    color: rebeccapurple;
+    font-weight: 600;
+}
+
 .post-image > img{
     width: 100%;
+    max-height: 550px;
 }
 
 .post-options{
-    padding-top: 10px;
-    border-top: 1px solid lightgray;
+    padding-top: 3px;
+    border-top: 1px solid rgba(182, 182, 182, 0.62);
     display: flex;
     justify-content: space-evenly;
     font-size: medium;
     color: gray;
     cursor: pointer;
-    padding-top: 15px;
+    
 }
 .post-option{
     display: flex;
@@ -51,8 +58,27 @@
 }
 .post-option > p{
     margin-left: 10px;
+    color: rgb(72, 96, 218);
 }
 .post-option:hover{
     background-color: #eff2f5;
     border-radius: 10px;
 }
+
+.likebtn:hover{
+    color: blue;
+}
+.likebtn > p {
+    font-weight: bold;
+}
+.react-div img{
+    height: 20px;
+    margin-left: 1px;
+ 
+}
+.react-div{
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+}
+
